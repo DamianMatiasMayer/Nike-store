@@ -7,27 +7,27 @@ function obtenerZapatillaPreferida() {
 }
 
 function obtenerTalle() {
-  let talla = "";
-  while (isNaN(talla) || talla < 6 || talla > 13) {
-    talla = prompt("¿Cuál es tu talle de zapatilla? (6-13)");
+  let talle = "";
+  while (isNaN(talle) || talle < 6 || talle > 13) {
+    talle = prompt("¿Cuál es tu talle de zapatilla? (6-13)");
   }
-  return talla;
+  return talle;
 }
 
-function mostrarTalle(zapatilla, talla) {
+function mostrarTalle(zapatilla, talle) {
   switch (zapatilla.toLowerCase()) {
     case "nike":
-      console.log("Tu talle de Nike es " + talla + ".");
+      console.log("Tu talle de Nike es " + talle + ".");
       break;
     case "adidas":
-      console.log("Tu talle de Adidas es " + talla + ".");
+      console.log("Tu talle de Adidas es " + talle + ".");
       break;
     case "puma":
-      console.log("Tu talle de Puma es " + talla + ".");
+      console.log("Tu talle de Puma es " + talle + ".");
       break;
   }
 }
 
 let zapatilla = obtenerZapatillaPreferida();
-let talla = obtenerTalle();
-mostrarTalle(zapatilla, talla);
+let talle = obtenerTalle();
+mostrarTalle(zapatilla, talle);
